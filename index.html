@@ -1,447 +1,431 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Theory LLC - Business Plan Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #009fdd;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Light Theory LLC - Business Plan Infographic&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.jsdelivr.net/npm/chart.js"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.chart-container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-left: auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-right: auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 300px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-height: 400px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (min-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.chart-container {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>height: 350px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.loader {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 4px solid #f3f3f3;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: 4px solid #009fdd;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: spin 1s linear infinite;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes spin {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>0% { transform: rotate(0deg); }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>100% { transform: rotate(360deg); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body class="bg-gray-50"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto p-4 md:p-8"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;header class="text-center mb-12"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-4xl md:text-5xl font-extrabold text-[#004aad]"&gt;Light Theory LLC&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-lg text-[#009fdd] mt-2"&gt;Secure, Compliant, and Reliable Procurement for Government&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="mb-16"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-6 rounded-lg shadow-md text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-5xl mb-3"&gt;🛡️&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-[#004aad]"&gt;Compliance-First&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mt-2"&gt;Founded by a 17-year federal security specialist, we reduce risk with meticulous, error-free bids and contract management.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-6 rounded-lg shadow-md text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-5xl mb-3"&gt;🤝&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-[#004aad]"&gt;Single-Source Convenience&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mt-2"&gt;Fulfill IT hardware, software, and office supply needs through one reliable, responsive vendor.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-6 rounded-lg shadow-md text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-5xl mb-3"&gt;📜&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-[#004aad]"&gt;Set-Aside Contract Access&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mt-2"&gt;As a certified MWOB, we help agencies meet supplier diversity goals and access targeted procurement opportunities.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-6 rounded-lg shadow-md text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-5xl mb-3"&gt;🚚&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-[#004aad]"&gt;Tier-1 Distributor Power&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mt-2"&gt;Leveraging national inventory from partners like TD SYNNEX and Ingram Micro for rapid, reliable fulfillment.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="ai-pitch" class="mb-16 text-center bg-white p-6 md:p-8 rounded-lg shadow-md"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold text-[#004aad] mb-4"&gt;Our Vision, Instantly&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-600 max-w-3xl mx-auto mb-6"&gt;Curious how we pitch Light Theory to a new partner? Click the button below to see how we use AI to generate a compelling elevator pitch based on our core strengths.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="generatePitchBtn" class="bg-[#009fdd] text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-[#007bb5] transition-colors duration-300"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>✨ Generate Elevator Pitch</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="pitchLoader" class="hidden mt-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="loader"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="pitchOutput" class="mt-6 bg-gray-100 p-6 rounded-lg shadow-inner text-left max-w-3xl mx-auto hidden prose"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="mb-16 bg-white p-6 md:p-8 rounded-lg shadow-md"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold text-center text-[#004aad] mb-8"&gt;The Market Opportunity&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-5xl font-extrabold text-[#009fdd]"&gt;$1.5T+&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mt-2"&gt;Annual State &amp; Local Government Procurement Market&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-5xl font-extrabold text-[#009fdd]"&gt;💻&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mt-2 font-semibold"&gt;Digital Transformation &amp; Hybrid Work Driving IT Upgrades&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-5xl font-extrabold text-[#009fdd]"&gt;🧑🏽‍🤝‍🧑🏿&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mt-2 font-semibold"&gt;Growing Emphasis on Contracting with Certified Diverse Suppliers&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="mb-16"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold text-center text-[#004aad] mb-8"&gt;Year 1 Financial Snapshot&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-6 rounded-lg shadow-md"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-[#004aad] mb-4"&gt;Revenue &amp; Profit Projection&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>&lt;p class="text-gray-600 mb-4"&gt;Based on a conservative estimate of contract wins, Year 1 shows a clear path to profitability, driven by a blended gross margin of 12% across all product categories.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="chart-container h-64 md:h-80"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;canvas id="revenueProfitChart"&gt;&lt;/canvas&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-6 rounded-lg shadow-md"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-[#004aad] mb-4"&gt;Projected Revenue by Contract Size&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mb-4"&gt;Our revenue strategy is diversified across small, medium, and large contracts, ensuring a stable and growing income stream throughout the first year of operations.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="chart-container h-64 md:h-80"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;canvas id="revenueMixChart"&gt;&lt;/canvas&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="mb-16 bg-white p-6 md:p-8 rounded-lg shadow-md"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold text-center text-[#004aad] mb-8"&gt;3-Year Growth Trajectory&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-center text-gray-600 max-w-3xl mx-auto mb-8"&gt;We project strong, sustainable growth as we build past performance and expand our relationships. This chart illustrates the projected increase in revenue and net income over the first three years.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="chart-container h-80 md:h-96"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;canvas id="growthChart"&gt;&lt;/canvas&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="mb-16"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;h2 class="text-3xl font-bold text-center text-[#004aad] mb-8"&gt;The Cash Flow Cycle &amp; Funding Need&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;p class="text-center text-gray-600 max-w-3xl mx-auto mb-8"&gt;Government contracting involves a delay between paying suppliers and receiving client payments. Our cash flow projection clearly shows this gap. A $250,000 line of credit is essential to bridge this timing difference, enabling us to fulfill large orders and scale the business effectively.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white p-6 md:p-8 rounded-lg shadow-md"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-col md:flex-row justify-around text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-4xl font-bold text-[#004aad]"&gt;1&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="font-semibold mt-2"&gt;Purchase Order Received&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-500"&gt;Day 0&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-4 text-2xl text-gray-400 self-center hidden md:block"&gt;➡️&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-4xl font-bold text-[#ff6f61]"&gt;2&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="font-semibold mt-2"&gt;Pay Supplier (using LOC)&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-500"&gt;Day 30&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-4 text-2xl text-gray-400 self-center hidden md:block"&gt;➡️&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-4xl font-bold text-[#009fdd]"&gt;3&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="font-semibold mt-2"&gt;Receive Client Payment&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-500"&gt;Day 35&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>&lt;div class="p-4 text-2xl text-gray-400 self-center hidden md:block"&gt;➡️&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-4xl font-bold text-green-500"&gt;4&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="font-semibold mt-2"&gt;Repay Line of Credit&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-500"&gt;Day 36&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="ai-bid-assist" class="mb-16"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;h2 class="text-3xl font-bold text-center text-[#004aad] mb-8"&gt;AI-Powered Bid Assist Simulation&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;p class="text-center text-gray-600 max-w-3xl mx-auto mb-8"&gt;See our efficiency in action. Below is a sample bid opportunity. We use AI to rapidly generate key proposal points, allowing us to respond faster and more effectively. Click to see how.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white p-6 md:p-8 rounded-lg shadow-md max-w-4xl mx-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="font-bold text-xl text-[#004aad]"&gt;Sample Request for Quote (RFQ)&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="mt-4 border-l-4 border-[#009fdd] pl-4 text-gray-700"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;To:&lt;/strong&gt; Light Theory LLC&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;From:&lt;/strong&gt; Montgomery County IT Department&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Subject:&lt;/strong&gt; RFQ for 150 Laptops for Hybrid Workforce Initiative&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Requirement:&lt;/strong&gt; Please provide a proposal for 150 business-class laptops (e.g., HP EliteBook, Dell Latitude) to support our new hybrid work policy. Proposal should highlight vendor reliability, compliance with state procurement rules, and post-sale support.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-center mt-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>&lt;button id="generateProposalBtn" class="bg-[#ff6f61] text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-[#e65a50] transition-colors duration-300"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>✨ Generate Key Proposal Points</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>&lt;div id="proposalLoader" class="hidden mt-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="loader"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div id="proposalOutput" class="mt-6 bg-gray-100 p-6 rounded-lg text-left hidden prose"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const brilliantBlues = {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>primary: '#004aad',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>secondary: '#009fdd',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>accent1: '#ff6f61',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>accent2: '#a6d49f',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text: '#333333',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: '#f8f9fa'</p>
-<p class="p1"><span class="Apple-converted-space">        </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function wrapLabels(label) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const maxLen = 16;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (label.length &gt; maxLen) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const words = label.split(' ');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>let currentLine = '';</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const lines = [];</p>
-<p class="p1"><span class="Apple-converted-space">                </span>for (let word of words) {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>if ((currentLine + word).length &gt; maxLen) {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>lines.push(currentLine.trim());</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>currentLine = '';</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>currentLine += word + ' ';</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>lines.push(currentLine.trim());</p>
-<p class="p1"><span class="Apple-converted-space">                </span>return lines;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>return label;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const tooltipTitleCallback = (tooltipItems) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const item = tooltipItems[0];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>let label = item.chart.data.labels[item.dataIndex];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (Array.isArray(label)) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>return label.join(' ');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>return label;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const commonChartOptions = {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>responsive: true,</p>
-<p class="p1"><span class="Apple-converted-space">            </span>maintainAspectRatio: false,</p>
-<p class="p1"><span class="Apple-converted-space">            </span>plugins: {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>legend: {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>position: 'top',</p>
-<p class="p1"><span class="Apple-converted-space">                </span>},</p>
-<p class="p1"><span class="Apple-converted-space">                </span>tooltip: {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>callbacks: {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>title: tooltipTitleCallback</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>},</p>
-<p class="p1"><span class="Apple-converted-space">            </span>scales: {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>y: {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>beginAtZero: true,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>ticks: {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>callback: function(value) {</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>return '$' + new Intl.NumberFormat('en-US', { notation: 'compact', compactDisplay: 'short' }).format(value);</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>new Chart(document.getElementById('revenueProfitChart'), {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>type: 'bar',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>data: {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>labels: ['Total Revenue', 'Gross Profit', 'Net Income (Pre-Tax)'],</p>
-<p class="p1"><span class="Apple-converted-space">                </span>datasets: [{</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>label: 'Year 1 Projections',</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>data: [780000, 93600, 63060],</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>backgroundColor: [brilliantBlues.primary, brilliantBlues.secondary, brilliantBlues.accent2],</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>borderColor: [brilliantBlues.primary, brilliantBlues.secondary, brilliantBlues.accent2],</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>borderWidth: 1</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}]</p>
-<p class="p1"><span class="Apple-converted-space">            </span>},</p>
-<p class="p1"><span class="Apple-converted-space">            </span>options: commonChartOptions</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>new Chart(document.getElementById('revenueMixChart'), {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>type: 'doughnut',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>data: {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>labels: ['Large Contracts', 'Medium Contracts', 'Small Contracts'],</p>
-<p class="p1"><span class="Apple-converted-space">                </span>datasets: [{</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>label: 'Revenue Mix',</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>data: [400000, 300000, 80000],</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>backgroundColor: [brilliantBlues.primary, brilliantBlues.secondary, brilliantBlues.accent1],</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>hoverOffset: 4</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}]</p>
-<p class="p1"><span class="Apple-converted-space">            </span>},</p>
-<p class="p1"><span class="Apple-converted-space">            </span>options: {</p>
-<p class="p1"><span class="Apple-converted-space">                 </span>responsive: true,</p>
-<p class="p1"><span class="Apple-converted-space">                 </span>maintainAspectRatio: false,</p>
-<p class="p1"><span class="Apple-converted-space">                 </span>plugins: {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>legend: {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>position: 'top',</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>tooltip: {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>callbacks: {</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>title: tooltipTitleCallback,</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>label: function(context) {</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>let label = context.label || '';</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>if (label) {</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>label += ': ';</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>if (context.parsed !== null) {</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed);</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>return label;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>new Chart(document.getElementById('growthChart'), {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>type: 'line',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>data: {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>labels: ['Year 1', 'Year 2', 'Year 3'],</p>
-<p class="p1"><span class="Apple-converted-space">                </span>datasets: [{</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>label: 'Total Revenue',</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>data: [780000, 1170000, 1521000],</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>borderColor: brilliantBlues.primary,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>backgroundColor: brilliantBlues.primary + '33',</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>fill: true,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>tension: 0.1</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}, {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>label: 'Net Income',</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>data: [47295, 77364, 103142],</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>borderColor: brilliantBlues.secondary,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>backgroundColor: brilliantBlues.secondary + '33',</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>fill: true,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>tension: 0.1</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}]</p>
-<p class="p1"><span class="Apple-converted-space">            </span>},</p>
-<p class="p1"><span class="Apple-converted-space">            </span>options: commonChartOptions</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const API_KEY = "";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>async function callGeminiWithExponentialBackoff(prompt, outputElement, loadingElement) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>loadingElement.classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>outputElement.classList.add('hidden');</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const payload = { contents: chatHistory };</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${API_KEY}`;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>let response;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>let retries = 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const maxRetries = 5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>let delay = 1000;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>while (retries &lt; maxRetries) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>try {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>response = await fetch(apiUrl, {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>method: 'POST',</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>headers: { 'Content-Type': 'application/json' },</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>body: JSON.stringify(payload)</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>if (response.ok) {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>const result = await response.json();</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>if (result.candidates &amp;&amp; result.candidates.length &gt; 0 &amp;&amp;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>result.candidates[0].content &amp;&amp; result.candidates[0].content.parts &amp;&amp;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>result.candidates[0].content.parts.length &gt; 0) {</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>const text = result.candidates[0].content.parts[0].text;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>outputElement.innerHTML = text.replace(/^- /gm, '&lt;p class="mb-2"&gt;&lt;strong&gt;&amp;bull;&lt;/strong&gt; ').replace(/\n/g, '&lt;/p&gt;');</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>outputElement.classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>loadingElement.classList.add('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>return;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>} else if (response.status === 429 || response.status &gt;= 500) {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>await new Promise(resolve =&gt; setTimeout(resolve, delay));</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>delay *= 2;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>retries++;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>throw new Error(`API request failed with status ${response.status}`);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>} catch (error) {</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>console.error('Error calling Gemini API:', error);</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>outputElement.innerHTML = '&lt;p class="text-red-500"&gt;An error occurred. Please try again.&lt;/p&gt;';</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>outputElement.classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>loadingElement.classList.add('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>return;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>console.error('Max retries reached. Could not call Gemini API.');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>outputElement.innerHTML = '&lt;p class="text-red-500"&gt;The service is currently busy. Please try again later.&lt;/p&gt;';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>outputElement.classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>loadingElement.classList.add('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('generatePitchBtn').addEventListener('click', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const pitchPrompt = `</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Based on the following business profile for a company called "Light Theory LLC", generate a compelling and concise 60-second elevator pitch. The pitch should be confident, professional, and targeted towards a potential government partner or lender.</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>**Business Profile:**</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Name:** Light Theory LLC</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Tagline:** Secure, Compliant, and Reliable Procurement for Government.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Core Business:** Minority Woman-Owned (MWOB) reseller of IT hardware, software, and office supplies to state and local government agencies.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Key Differentiator 1 (Compliance-First):** Founded by a 17-year federal security specialist. This background ensures meticulous, error-free bids and reduces procurement risk for the client.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Key Differentiator 2 (Set-Aside Access):** As a certified MWOB, the company helps agencies meet supplier diversity goals.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Key Differentiator 3 (Convenience):** Acts as a single-source vendor for multiple needs.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Key Differentiator 4 (Reliability):** Partners with major distributors like TD SYNNEX and Ingram Micro for rapid fulfillment.</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>The pitch should start with a strong hook and clearly state the value proposition. Format the output as a single paragraph.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>`;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>callGeminiWithExponentialBackoff(pitchPrompt, document.getElementById('pitchOutput'), document.getElementById('pitchLoader'));</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('generateProposalBtn').addEventListener('click', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const proposalPrompt = `</p>
-<p class="p1"><span class="Apple-converted-space">                </span>You are an AI assistant for "Light Theory LLC", a government contractor.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Your task is to generate 3-4 key talking points for a proposal cover letter in response to the following Request for Quote (RFQ).</p>
-<p class="p1"><span class="Apple-converted-space">                </span>The talking points should be formatted as a simple list. Each point should directly address the RFQ's needs while highlighting Light Theory LLC's unique strengths.</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>**RFQ Details:**</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Client:** Montgomery County IT Department</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Request:** Proposal for 150 business-class laptops for a new hybrid workforce.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Key Requirements:** Vendor reliability, compliance with state procurement rules, and post-sale support.</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>**Light Theory LLC's Strengths to Emphasize:**</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Compliance-First Approach:** Founded by a 17-year federal security specialist, ensuring perfect compliance with procurement rules.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Reliability:** Strong partnerships with Tier-1 distributors like HP and Dell for guaranteed supply and support.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Single-Source Convenience:** Can handle the entire lifecycle from procurement to delivery.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>- **Certified MWOB:** Helps the county meet its supplier diversity goals.</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>Generate the response as a simple, unnumbered list, with each point starting with a dash (-).</p>
-<p class="p1"><span class="Apple-converted-space">            </span>`;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>callGeminiWithExponentialBackoff(proposalPrompt, document.getElementById('proposalOutput'), document.getElementById('proposalLoader'));</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<body class="bg-gray-50">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#004aad]">Light Theory LLC</h1>
+            <p class="text-lg text-[#009fdd] mt-2">Secure, Compliant, and Reliable Procurement for Government</p>
+        </header>
+
+        <section class="mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-5xl mb-3">🛡️</div>
+                    <h3 class="text-xl font-bold text-[#004aad]">Compliance-First</h3>
+                    <p class="text-gray-600 mt-2">Founded by a 17-year federal security specialist, we reduce risk with meticulous, error-free bids and contract management.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-5xl mb-3">🤝</div>
+                    <h3 class="text-xl font-bold text-[#004aad]">Single-Source Convenience</h3>
+                    <p class="text-gray-600 mt-2">Fulfill IT hardware, software, and office supply needs through one reliable, responsive vendor.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-5xl mb-3">📜</div>
+                    <h3 class="text-xl font-bold text-[#004aad]">Set-Aside Contract Access</h3>
+                    <p class="text-gray-600 mt-2">Poised to help agencies meet supplier diversity goals. We are actively pursuing MWOB certification to provide targeted procurement solutions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-5xl mb-3">🚚</div>
+                    <h3 class="text-xl font-bold text-[#004aad]">Tier-1 Distributor Power</h3>
+                    <p class="text-gray-600 mt-2">Leveraging national inventory from partners like TD SYNNEX and Ingram Micro for rapid, reliable fulfillment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-pitch" class="mb-16 text-center bg-white p-6 md:p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-[#004aad] mb-4">Our Vision, Instantly</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto mb-6">Curious how we pitch Light Theory to a new partner? Click the button below to see how we use AI to generate a compelling elevator pitch based on our core strengths.</p>
+            <button id="generatePitchBtn" class="bg-[#009fdd] text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-[#007bb5] transition-colors duration-300">
+                ✨ Generate Elevator Pitch
+            </button>
+            <div id="pitchLoader" class="hidden mt-6">
+                <div class="loader"></div>
+            </div>
+            <div id="pitchOutput" class="mt-6 bg-gray-100 p-6 rounded-lg shadow-inner text-left max-w-3xl mx-auto hidden prose">
+            </div>
+        </section>
+
+        <section class="mb-16 bg-white p-6 md:p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-center text-[#004aad] mb-8">The Market Opportunity</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <p class="text-5xl font-extrabold text-[#009fdd]">$1.5T+</p>
+                    <p class="text-gray-600 mt-2">Annual State & Local Government Procurement Market</p>
+                </div>
+                <div>
+                    <p class="text-5xl font-extrabold text-[#009fdd]">💻</p>
+                    <p class="text-gray-600 mt-2 font-semibold">Digital Transformation & Hybrid Work Driving IT Upgrades</p>
+                </div>
+                <div>
+                    <p class="text-5xl font-extrabold text-[#009fdd]">🧑🏽‍🤝‍🧑🏿</p>
+                    <p class="text-gray-600 mt-2 font-semibold">Growing Emphasis on Contracting with Diverse Suppliers</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#004aad] mb-8">Year 1 Financial Snapshot</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-[#004aad] mb-4">Revenue & Profit Projection</h3>
+                     <p class="text-gray-600 mb-4">Based on a conservative estimate of contract wins, Year 1 shows a clear path to profitability, driven by a blended gross margin of 12% across all product categories.</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="revenueProfitChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-[#004aad] mb-4">Projected Revenue by Contract Size</h3>
+                    <p class="text-gray-600 mb-4">Our revenue strategy is diversified across small, medium, and large contracts, ensuring a stable and growing income stream throughout the first year of operations.</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="revenueMixChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-white p-6 md:p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-center text-[#004aad] mb-8">3-Year Growth Trajectory</h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">We project strong, sustainable growth as we build past performance and expand our relationships. This chart illustrates the projected increase in revenue and net income over the first three years.</p>
+            <div class="chart-container h-80 md:h-96">
+                <canvas id="growthChart"></canvas>
+            </div>
+        </section>
+        
+        <section class="mb-16">
+             <h2 class="text-3xl font-bold text-center text-[#004aad] mb-8">The Cash Flow Cycle & Funding Need</h2>
+             <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Government contracting involves a delay between paying suppliers and receiving client payments. Our cash flow projection clearly shows this gap. A $250,000 line of credit is essential to bridge this timing difference, enabling us to fulfill large orders and scale the business effectively.</p>
+            <div class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row justify-around text-center">
+                    <div class="p-4">
+                        <p class="text-4xl font-bold text-[#004aad]">1</p>
+                        <p class="font-semibold mt-2">Purchase Order Received</p>
+                        <p class="text-gray-500">Day 0</p>
+                    </div>
+                    <div class="p-4 text-2xl text-gray-400 self-center hidden md:block">➡️</div>
+                    <div class="p-4">
+                        <p class="text-4xl font-bold text-[#ff6f61]">2</p>
+                        <p class="font-semibold mt-2">Pay Supplier (using LOC)</p>
+                        <p class="text-gray-500">Day 30</p>
+                    </div>
+                    <div class="p-4 text-2xl text-gray-400 self-center hidden md:block">➡️</div>
+                    <div class="p-4">
+                        <p class="text-4xl font-bold text-[#009fdd]">3</p>
+                        <p class="font-semibold mt-2">Receive Client Payment</p>
+                        <p class="text-gray-500">Day 35</p>
+                    </div>
+                     <div class="p-4 text-2xl text-gray-400 self-center hidden md:block">➡️</div>
+                    <div class="p-4">
+                        <p class="text-4xl font-bold text-green-500">4</p>
+                        <p class="font-semibold mt-2">Repay Line of Credit</p>
+                        <p class="text-gray-500">Day 36</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-bid-assist" class="mb-16">
+             <h2 class="text-3xl font-bold text-center text-[#004aad] mb-8">AI-Powered Bid Assist Simulation</h2>
+             <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">See our efficiency in action. Below is a sample bid opportunity. We use AI to rapidly generate key proposal points, allowing us to respond faster and more effectively. Click to see how.</p>
+            <div class="bg-white p-6 md:p-8 rounded-lg shadow-md max-w-4xl mx-auto">
+                <h3 class="font-bold text-xl text-[#004aad]">Sample Request for Quote (RFQ)</h3>
+                <div class="mt-4 border-l-4 border-[#009fdd] pl-4 text-gray-700">
+                    <p><strong>To:</strong> Light Theory LLC</p>
+                    <p><strong>From:</strong> Montgomery County IT Department</p>
+                    <p><strong>Subject:</strong> RFQ for 150 Laptops for Hybrid Workforce Initiative</p>
+                    <p><strong>Requirement:</strong> Please provide a proposal for 150 business-class laptops (e.g., HP EliteBook, Dell Latitude) to support our new hybrid work policy. Proposal should highlight vendor reliability, compliance with state procurement rules, and post-sale support.</p>
+                </div>
+                <div class="text-center mt-6">
+                     <button id="generateProposalBtn" class="bg-[#ff6f61] text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-[#e65a50] transition-colors duration-300">
+                        ✨ Generate Key Proposal Points
+                    </button>
+                     <div id="proposalLoader" class="hidden mt-6">
+                        <div class="loader"></div>
+                    </div>
+                    <div id="proposalOutput" class="mt-6 bg-gray-100 p-6 rounded-lg text-left hidden prose">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const brilliantBlues = {
+            primary: '#004aad',
+            secondary: '#009fdd',
+            accent1: '#ff6f61',
+            accent2: '#a6d49f',
+            text: '#333333',
+            background: '#f8f9fa'
+        };
+
+        function wrapLabels(label) {
+            const maxLen = 16;
+            if (label.length > maxLen) {
+                const words = label.split(' ');
+                let currentLine = '';
+                const lines = [];
+                for (let word of words) {
+                    if ((currentLine + word).length > maxLen) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                }
+                lines.push(currentLine.trim());
+                return lines;
+            }
+            return label;
+        }
+        
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const commonChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return '$' + new Intl.NumberFormat('en-US', { notation: 'compact', compactDisplay: 'short' }).format(value);
+                        }
+                    }
+                }
+            }
+        };
+
+        new Chart(document.getElementById('revenueProfitChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Total Revenue', 'Gross Profit', 'Net Income (Pre-Tax)'],
+                datasets: [{
+                    label: 'Year 1 Projections',
+                    data: [780000, 93600, 63060],
+                    backgroundColor: [brilliantBlues.primary, brilliantBlues.secondary, brilliantBlues.accent2],
+                    borderColor: [brilliantBlues.primary, brilliantBlues.secondary, brilliantBlues.accent2],
+                    borderWidth: 1
+                }]
+            },
+            options: commonChartOptions
+        });
+
+        new Chart(document.getElementById('revenueMixChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Large Contracts', 'Medium Contracts', 'Small Contracts'],
+                datasets: [{
+                    label: 'Revenue Mix',
+                    data: [400000, 300000, 80000],
+                    backgroundColor: [brilliantBlues.primary, brilliantBlues.secondary, brilliantBlues.accent1],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                 responsive: true,
+                 maintainAspectRatio: false,
+                 plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback,
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed);
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('growthChart'), {
+            type: 'line',
+            data: {
+                labels: ['Year 1', 'Year 2', 'Year 3'],
+                datasets: [{
+                    label: 'Total Revenue',
+                    data: [780000, 1170000, 1521000],
+                    borderColor: brilliantBlues.primary,
+                    backgroundColor: brilliantBlues.primary + '33',
+                    fill: true,
+                    tension: 0.1
+                }, {
+                    label: 'Net Income',
+                    data: [47295, 77364, 103142],
+                    borderColor: brilliantBlues.secondary,
+                    backgroundColor: brilliantBlues.secondary + '33',
+                    fill: true,
+                    tension: 0.1
+                }]
+            },
+            options: commonChartOptions
+        });
+        
+        const API_KEY = "AIzaSyDo8THGyujkvmNxF8JNFY64TKJznWeaMuA";
+
+        async function callGeminiWithExponentialBackoff(prompt, outputElement, loadingElement) {
+            loadingElement.classList.remove('hidden');
+            outputElement.classList.add('hidden');
+            
+            let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+            const payload = { contents: chatHistory };
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${API_KEY}`;
+
+            let response;
+            let retries = 0;
+            const maxRetries = 5;
+            let delay = 1000;
+
+            while (retries < maxRetries) {
+                try {
+                    response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (response.ok) {
+                        const result = await response.json();
+                        if (result.candidates && result.candidates.length > 0 &&
+                            result.candidates[0].content && result.candidates[0].content.parts &&
+                            result.candidates[0].content.parts.length > 0) {
+                            const text = result.candidates[0].content.parts[0].text;
+                            outputElement.innerHTML = text.replace(/^- /gm, '<p class="mb-2"><strong>&bull;</strong> ').replace(/\n/g, '</p>');
+                            outputElement.classList.remove('hidden');
+                            loadingElement.classList.add('hidden');
+                            return; 
+                        }
+                    } else if (response.status === 429 || response.status >= 500) {
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                        delay *= 2;
+                        retries++;
+                    } else {
+                        throw new Error(`API request failed with status ${response.status}`);
+                    }
+                } catch (error) {
+                     console.error('Error calling Gemini API:', error);
+                     outputElement.innerHTML = '<p class="text-red-500">An error occurred. Please try again.</p>';
+                     outputElement.classList.remove('hidden');
+                     loadingElement.classList.add('hidden');
+                     return;
+                }
+            }
+
+            console.error('Max retries reached. Could not call Gemini API.');
+            outputElement.innerHTML = '<p class="text-red-500">The service is currently busy. Please try again later.</p>';
+            outputElement.classList.remove('hidden');
+            loadingElement.classList.add('hidden');
+        }
+
+        document.getElementById('generatePitchBtn').addEventListener('click', () => {
+            const pitchPrompt = `
+                Based on the following business profile for a company called "Light Theory LLC", generate a compelling and concise 60-second elevator pitch. The pitch should be confident, professional, and targeted towards a potential government partner or lender.
+
+                **Business Profile:**
+                - **Name:** Light Theory LLC
+                - **Tagline:** Secure, Compliant, and Reliable Procurement for Government.
+                - **Core Business:** Minority Woman-Owned (MWOB-certification pending) reseller of IT hardware, software, and office supplies to state and local government agencies.
+                - **Key Differentiator 1 (Compliance-First):** Founded by a 17-year federal security specialist. This background ensures meticulous, error-free bids and reduces procurement risk for the client.
+                - **Key Differentiator 2 (Set-Aside Access):** Actively pursuing MWOB certification to help agencies meet supplier diversity goals.
+                - **Key Differentiator 3 (Convenience):** Acts as a single-source vendor for multiple needs.
+                - **Key Differentiator 4 (Reliability):** Partners with major distributors like TD SYNNEX and Ingram Micro for rapid fulfillment.
+                
+                The pitch should start with a strong hook and clearly state the value proposition. Format the output as a single paragraph.
+            `;
+            callGeminiWithExponentialBackoff(pitchPrompt, document.getElementById('pitchOutput'), document.getElementById('pitchLoader'));
+        });
+
+        document.getElementById('generateProposalBtn').addEventListener('click', () => {
+            const proposalPrompt = `
+                You are an AI assistant for "Light Theory LLC", a government contractor.
+                Your task is to generate 3-4 key talking points for a proposal cover letter in response to the following Request for Quote (RFQ).
+                The talking points should be formatted as a simple list. Each point should directly address the RFQ's needs while highlighting Light Theory LLC's unique strengths.
+
+                **RFQ Details:**
+                - **Client:** Montgomery County IT Department
+                - **Request:** Proposal for 150 business-class laptops for a new hybrid workforce.
+                - **Key Requirements:** Vendor reliability, compliance with state procurement rules, and post-sale support.
+
+                **Light Theory LLC's Strengths to Emphasize:**
+                - **Compliance-First Approach:** Founded by a 17-year federal security specialist, ensuring perfect compliance with procurement rules.
+                - **Reliability:** Strong partnerships with Tier-1 distributors like HP and Dell for guaranteed supply and support.
+                - **Single-Source Convenience:** Can handle the entire lifecycle from procurement to delivery.
+                - **Certified MWOB (Pending):** Helps the county meet its supplier diversity goals upon certification.
+
+                Generate the response as a simple, unnumbered list, with each point starting with a dash (-).
+            `;
+            callGeminiWithExponentialBackoff(proposalPrompt, document.getElementById('proposalOutput'), document.getElementById('proposalLoader'));
+        });
+    </script>
 </body>
 </html>
